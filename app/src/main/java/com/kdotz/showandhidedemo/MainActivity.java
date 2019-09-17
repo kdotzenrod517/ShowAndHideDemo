@@ -17,15 +17,12 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
     }
 
-    public void show(View view){
-        if(textView.getVisibility() == View.INVISIBLE){
-            textView.setVisibility(View.VISIBLE);
-        }
+    public void show(View view) {
+        textView.setVisibility(View.VISIBLE);
     }
 
-    public void hide(View view){
-        if(textView.getVisibility() == View.VISIBLE){
-            textView.setVisibility(View.INVISIBLE);
-        }
+    public void hide(View view) {
+        textView.setVisibility(View.INVISIBLE);
+
     }
 }
